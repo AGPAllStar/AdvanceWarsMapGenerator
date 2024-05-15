@@ -22,9 +22,9 @@ def generateAWMap():
             map = generateMap(mapWidth, mapHeight, features)
             return redirect(url_for('loadGame', response=convertArrayMapToString(map)))
         else:
-            return jsonify(message="An error has ocurred", status=400, mimetype='application/json')
+            return render_template('index.html', errorMsg="Un parámetro tiene un valor incorrecto.")
     except:
-        return jsonify(message="An error has ocurred", status=400, mimetype='application/json')
+        return render_template('index.html', errorMsg="No se pudo generar el mapa. Inténtelo de nuevo.")
 
 @app.route('/game')
 def loadGame():
