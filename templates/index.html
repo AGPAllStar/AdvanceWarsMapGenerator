@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Álvaro García Peña" />
+    <meta name="description" content="Esta página permite la generación de mapas de Advance Wars mediante IA" />
+    <meta name="keywords" content="mapa, advance, wars, ia" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/res/favicon.ico" />
+    <title>Generador de mapas por IA</title>
+</head>
+
+<body>
+    <header>
+        <h1>Generación de mapas por IA</h1>
+    </header>
+    <main>
+        <h2>Opciones del mapa</h2>
+        <form action="/generate_aw_map" method="POST">
+            <label for="mapWidth">Ancho de la isla: </label><input id="mapWidth" name="mapWidth" type="number" min="10" max="100" />
+            <label for="mapHeight">Alto de la isla: </label><input id="mapHeight" name="mapHeight" type="number" min="10" max="100" />
+            <label for="numberRoads">Número de carreteras: </label><input id="numberRoads" name="numberRoads" type="number" min="0" max="10" />
+            <button id="buttonSubmit" type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

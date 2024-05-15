@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="/static/res/favicon.ico" />
+
+    <title>Juego Advance Wars</title>
+    <style>
+        * { padding: 0; margin: 0; }
+        canvas {
+            background: #eee;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="480" height="320"></canvas>
+    <input type="hidden" id="response" value="{{ response }}" />
+
+    <script src="/static/src/Globales.js"></script>
+    <script src="/static/src/GestorAudio.js"></script>
+    <script src="/static/src/modelos/Texto.js"></script>
+    <script src="/static/src/modelos/Modelo.js"></script>
+    <script src="/static/src/modelos/Boton.js"></script>
+    <script src="/static/src/modelos/Pad.js"></script>
+    <script src="/static/src/modelos/Fondo.js"></script>
+    <script src="/static/src/Player.js"></script>
+    <script src="/static/src/modelos/troops/Troop.js"></script>
+    <script src="/static/src/modelos/troops/GroundTroop.js"></script>
+    <script src="/static/src/modelos/troops/AirTroop.js"></script>
+    <script src="/static/src/modelos/troops/InfantryTroop.js"></script>
+    <script src="/static/src/modelos/troops/TankTroop.js"></script>
+    <script src="/static/src/modelos/troops/HelicopterTroop.js"></script>
+    <script src="/static/src/modelos/terrains/Terrain.js"></script>
+    <script src="/static/src/modelos/terrains/BackgroundTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/GroundWithBackGroundTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/Building.js"></script>
+    <script src="/static/src/modelos/terrains/GroundTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/WaterTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/ForestTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/MountainTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/RoadTerrain.js"></script>
+    <script src="/static/src/modelos/terrains/CityBuilding.js"></script>
+    <script src="/static/src/modelos/terrains/FactoryBuilding.js"></script>
+    <script src="/static/src/modelos/terrains/AirportBuilding.js"></script>
+    <script src="/static/src/modelos/terrains/HQBuilding.js"></script>
+    <script src="/static/src/Game.js"></script>
+    <script src="/static/src/layers/estados/EstadoGameLayer.js"></script>
+    <script src="/static/src/layers/estados/EstadoNulo.js"></script>
+    <script src="/static/src/layers/estados/EstadoCasillaMarcada.js"></script>
+    <script src="/static/src/layers/estados/EstadoMovimientoPreparado.js"></script>
+    <script src="/static/src/layers/estados/EstadoMovimientoCasillaMarcada.js"></script>
+    <script src="/static/src/layers/estados/EstadoAtaquePreparado.js"></script>
+    <script src="/static/src/layers/estados/EstadoAtaqueCasillaMarcada.js"></script>
+    <script src="/static/src/layers/estados/EstadoInvocacionPreparado.js"></script>
+    <script src="/static/src/layers/estados/EstadoJuegoFinalizado.js"></script>
+    <script src="/static/src/layers/Layer.js"></script>
+    <script src="/static/src/layers/MenuLayer.js"></script>
+    <script src="/static/src/layers/GameLayer.js"></script>
+    <script src="/static/src/Res.js"></script>
+    <script src="/static/src/EventosTeclado.js"></script>
+    <script src="/static/src/EventosPulsacion.js"></script>
+    <script src="/static/src/EventosGamePad.js"></script>
+    <script src="/static/src/graficos/Animacion.js"></script>
+    <script src="/static/Main.js"></script>
+
+</body>
+</html>
